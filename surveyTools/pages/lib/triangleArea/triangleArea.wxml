@@ -1,0 +1,27 @@
+<!--pages/lib/triangleArea/triangleArea.wxml-->
+<view class='lib_bg'>
+  <image src='../../../images/bg_04.jpg'></image>
+</view>
+<view class='page'>
+  <view class='page_hd'>
+    <text class='page_title'>计算三角形面积</text>
+  </view>
+  <view class='page_bd'>
+    <view class='show_img_wrapper'>
+      <image src='../../../images/triangle.png'></image>
+    </view>
+    <view class='input_wrapper'>
+      <wxc-input type="text" value='{{value}}' title="A：" placeholder="请输入第一条边长度" bindinput='inputA'></wxc-input>
+      <wxc-input type="text" value='{{value}}' title="B：" placeholder="请输入第二条边长度" bindinput='inputB'></wxc-input>
+      <wxc-input type="text" value='{{value}}' title="C：" placeholder="请输入第三条边长度" bindinput='inputC'></wxc-input>
+    </view>
+    <view class='btn_wrapper'>
+      <button class='calc_btn' hover-class='calc_btn_hover' bindtap='calcArea'>计算面积</button>
+      <button class='calc_btn' hover-class='calc_btn_hover' bindtap='clear'>清 空</button>
+    </view>
+    <view class='result'>
+      <view class='res_title'>三角形面积为：</view>
+      <view class='res_text'>{{result}}</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+<!--pages/lib/calcMech/history/history.wxml-->
+<view class='lib_bg'>
+  <image src='../../../../images/bg_04.jpg'></image>
+</view>
+<view class="content">
+  <block wx:for="{{logs}}" wx:for-item="log">
+      <view class="item">{{log}}</view>
+  </block>
+</view>

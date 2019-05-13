@@ -1,0 +1,28 @@
+<!--pages/lib/location/location.wxml-->
+<view class='home_page'>
+  <view class='page_hd'>
+    <text class='page_title'>获取当前位置</text>
+  </view>
+  <view class="cssBox" bindtap='locationTap'>
+  <view class="borderRadius">
+      <view class="lfRaidus">
+          <view class="ctRaidus"></view>
+      </view>
+      <view class="rtRaidus">
+          <view class="ctRaidus"></view>
+          <view class="hfPoint"></view>
+          <view class="rtPoint"></view>
+      </view>
+  </view>
+  <view class="imageRadius">
+    <image src="../../../images/locate_01.png" width="100%" alt=""></image>
+  </view>
+  <view class="waveRaidus">
+      <image src="../../../images/locate_01.png" width="100%" alt=""></image>
+  </view>
+  <view class="pointRadius">
+      <image src="../../../images/locate_02.png" width="100%" alt=""></image>
+  </view>
+</view>
+
+</view>

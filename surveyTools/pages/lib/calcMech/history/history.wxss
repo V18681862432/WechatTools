@@ -1,0 +1,21 @@
+/* pages/lib/calcMech/history/history.wxss */
+.content{
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 5rpx;
+}
+.item{
+    width: 95%;
+    line-height: 100rpx;
+    margin-top: 10rpx;
+    margin-bottom: 3rpx;
+    border-radius: 3px;
+    padding-left: 10rpx;
+    color: #666;
+    background: #dddd;
+}

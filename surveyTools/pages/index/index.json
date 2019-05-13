@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "wxc-example-menu": "../../packages/@minui/wxc-example-menu/dist/index",
+    "wxc-toast": "../../packages/@minui/wxc-toast/dist/index"
+  }
+}

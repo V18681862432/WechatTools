@@ -1,0 +1,34 @@
+<!--pages/about/about.wxml-->
+<view class='mask' hidden='{{detailFlag}}'></view>
+<view class='aboutMe'>
+  <view class='bg'>
+    <image src='../../images/bg_03.jpg'></image>
+  </view>
+  <view class="index-hd">
+      <image class="index-logo" src="../../images/logo.png"></image>
+  </view>
+  <view class='container'>
+    <view class='label' wx:for='{{lists}}' wx:key='{{index}}'>
+      <view class='title {{item.label_title}}' data-id='{{index}}' bindtap='showDetail'>{{item.title}}<view class='arrow'></view></view>
+      <view class='text' hidden='{{detailFlag}}'>
+        <view class='text_desc2' wx:if='{{activeIndex == 0}}' bindtap='oneWordNext'>
+          <view class='desc_list' wx:for='{{oneWord}}' wx:key='{{index}}'>
+              <view class='list_text' data-index='{{item.id}}'>{{oneWord[oneWordIndex].text}}</view>
+          </view>
+        </view>
+        <view class='text_desc3' wx:if='{{activeIndex == 1}}'>
+          <view class='desc_title'>觉得好的话就推荐给更多人吧</view>
+        </view>
+        <view class='text_desc1' wx:if='{{activeIndex == 2}}'><view  class="desc_title">西安科技大学物联网工程</view>
+          <view class='label_img'>
+            <image src=''></image>
+          </view>
+        </view>
+      </view>
+      <view class='close' bindtap='hideDetail' hidden='{{detailFlag}}'>
+        <image src='../../images/close.png'></image>
+      </view>
+    </view>
+  </view>
+</view>
+

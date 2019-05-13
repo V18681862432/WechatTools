@@ -1,0 +1,250 @@
+/* pages/about/about.wxss */
+.aboutMe{
+  width: 100%;
+  height: 100%;
+  background-color: #e4e9ed;
+}
+.aboutMe .bg{
+  width: 100%;
+  position: fixed;
+  z-index: 0;
+  bottom: 0;
+}
+.aboutMe .bg image{
+  display: block;
+  width: 100%;
+}
+
+.index-hd {
+  padding: 70rpx;
+  text-align: center;
+}
+.index-bd {
+  padding: 0 30rpx 40rpx;
+}
+.index-ft {
+  padding-bottom: 20rpx;
+  text-align: center;
+}
+.index-logo {
+  width: 100rpx;
+  height: 100rpx;
+}
+.index-desc {
+  margin-top: 20rpx;
+  color: #888888;
+  font-size: 28rpx;
+}
+.provider {
+  position: fixed;
+  width: 100%;
+  bottom: 60rpx;
+  color: #999;
+  text-align: center;
+}
+
+/* 内容样式 */
+/* 动画上下移动 */
+@keyframes upDown1{
+  0% {
+    transform: translate(0rpx, 0rpx)
+  }
+  50%{
+    transform: translate(0rpx, -10rpx)
+  }
+  100%{
+    transform: translate(0rpx, 0rpx)
+  }
+}
+@keyframes upDown2{
+  0% {
+    transform: translate(0rpx, -5rpx)
+  }
+  50%{
+    transform: translate(0rpx, 0rpx)
+  }
+  100%{
+    transform: translate(0rpx, -5rpx)
+  }
+}
+@keyframes upDown3{
+  0% {
+    transform: translate(0rpx, 0rpx)
+  }
+  50%{
+    transform: translate(0rpx, 8rpx)
+  }
+  100%{
+    transform: translate(0rpx, 0rpx)
+  }
+}
+@keyframes fadeIn {    
+    0% {opacity: 0;} 
+    40% {opacity: 0;}    
+    100% {opacity: 1;}   
+}
+@keyframes fadeInMask {    
+    0% {opacity: 0;} 
+    40% {opacity: 0;}    
+    100% {opacity: 0.6;}   
+}     
+.label{
+  position: absolute;
+  z-index: 22;
+}
+.label .title{
+  position: relative;
+  display: block;
+  width: 150rpx;
+  height: 150rpx;
+  line-height: 150rpx;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #666;
+  opacity: 0.6;
+}
+.label .arrow{
+  position: absolute;
+  bottom:-52rpx;
+  left: 60rpx;
+  height: 0;
+  width: 0;
+  display: block;
+  border-top: 30rpx solid #fff;
+  border-right: 15rpx solid transparent;
+  border-left: 15rpx solid transparent;
+  border-bottom: 30rpx solid transparent;
+}
+.label .text{
+  z-index: 30;
+  animation: fadeIn 0.5s ease-in;
+  color: #333;
+}
+.text_desc1{
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  margin-top: -280rpx;
+  margin-left: -300rpx;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  width: 560rpx;
+  height: 670rpx;
+  background-color: #fff;
+}
+.text_desc1 .desc_title{
+  margin-top: 20rpx;
+  padding: 10rpx;
+  text-align: center;
+}
+.text_desc2{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -300rpx;
+  margin-left: -300rpx;
+  width: 600rpx;
+  height: 600rpx;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+.text_desc2 .desc_list{
+  color: #666;
+  font-size: 44rpx;
+  width: 400rpx;
+  height: 300rpx;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -150rpx;
+  margin-left: -200rpx;
+}
+.text_desc2 .desc_list .list_text{
+  width: 400rpx;
+  height: 400rpx;
+}
+.text_desc3{
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  margin-top: -165rpx;
+  margin-left: -300rpx;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  width: 560rpx;
+  height: 300rpx;
+  background-color: #fff;
+}
+.text_desc3 .desc_title{
+  margin-top: 20rpx;
+  padding: 10rpx;
+  text-align: center;
+}
+.text_desc3 .zhihu{
+  margin-top: 30rpx;
+  text-align: center;
+}
+.text_desc3 .weibo{
+  text-align: center;
+}
+.label_img{
+  background-color: #fff;
+}
+.label_img{
+  margin: 15rpx auto 0;
+  width: 560rpx;
+  height: 560rpx;
+}
+.label_img image{
+  display: block;
+  width: 560rpx;
+  height: 560rpx;
+}
+.label .close{
+  z-index: 30;
+  position: fixed;
+  width: 50rpx;
+  height: 50rpx;
+  bottom:70rpx;
+  right:350rpx;
+  animation: fadeIn 0.5s ease-in;
+}
+.label .close image{
+  display: block;
+  width: 50rpx;
+  height: 50rpx;
+}
+.label_title1{
+  top:150rpx;
+  left: 80rpx;
+  animation: upDown1 2s infinite;
+}
+.label_title2{
+  top: 20rpx;
+  left: 300rpx;
+  animation: upDown2 3s infinite;
+}
+.label_title3{
+  top: 120rpx;
+  left:500rpx;
+  animation: upDown3 2s infinite;
+}
+.mask{
+  z-index: 22;
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.6;
+  animation: fadeInMask 0.5s ease-in;
+}
+@-webkit-keyframes luo{
+    0%{top: -1%;transform:rotate(-60deg);}
+    100%{top: 100%;transform:rotate(60deg);}
+}
+@keyframes luo{
+    0%{top: -1%;transform:rotate(-60deg);}
+    100%{top: 100%;transform:rotate(60deg);}
+}

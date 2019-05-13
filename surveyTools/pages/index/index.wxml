@@ -1,0 +1,24 @@
+<!-- wxp template -->
+<view class='bg'>
+ </view>
+<view class='homePage'>
+ <view class='swiper_wrapper'>
+ 
+ </view>
+ <view class='container'>
+    <view class='title'>主要功能</view>
+    <view class='item_wrapper'>
+      <view class='item' wx:for='{{itemLists1}}' wx:key='{{index}}'>
+        <image src='{{item.imgSrc}}' data-index='{{item.id}}' bindtap='navToSel'></image>
+        <view class='desc'>{{item.desc}}</view>
+      </view>
+    </view>
+    <view class='title'></view>
+    <view class='item_wrapper'>
+      <view class='item' wx:for='{{itemLists2}}' wx:key='{{index}}'>
+        <image src='{{item.imgSrc}}' data-index='{{item.id}}' bindtap=''></image>
+        <view class='desc'>{{item.desc}}</view>
+      </view>
+    </view>
+ </view>
+</view>

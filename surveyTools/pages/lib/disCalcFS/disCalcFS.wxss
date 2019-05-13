@@ -1,0 +1,25 @@
+/* pages/lib/disCalc/disCalc.wxss */
+.input_wrapper{
+
+}
+.input_wrapper .input_title{
+  padding: 20rpx;
+  display: block;
+  margin: 20rpx 0;
+}
+.result{
+  padding: 0 20rpx 100rpx;
+}
+.res_dis{
+  display: flex;
+  margin-top: 20rpx;
+}
+.res_angle{
+  display:flex;
+  margin-top: 30rpx;
+}
+.dis_title,.angle_title{
+  width: 200rpx;
+}
+.dis_text,.angle_text{
+}

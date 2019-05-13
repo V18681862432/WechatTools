@@ -1,0 +1,46 @@
+<!--pages/lib/disInter/disInter.wxml-->
+<view class='lib_bg'>
+  <image src='../../../images/bg_04.jpg'></image>
+</view>
+<view class='page'>
+  <view class='page_hd'>
+    <text class='page_title'>距离交会</text>
+  </view>
+  <view class='page_bd'>
+    <view class='show_img_wrapper'>
+      <image src='../../../images/distInter.png'></image>
+    </view>
+    <!-- 输入框 -->
+    <view class='input_wrapper'>
+        <text class='input_title'>请输入A点坐标：</text>
+        <wxc-input type="text" value='{{value}}' title="X：" placeholder='A点X轴坐标' bindinput='inputXa'></wxc-input>
+        <wxc-input type="text" value='{{value}}' title="Y：" placeholder='A点Y轴坐标' bindinput='inputYa'></wxc-input>
+    </view>
+    <view class='input_wrapper'>
+        <text class='input_title'>请输入B点坐标：</text>
+        <wxc-input type="text" value='{{value}}' title="X：" placeholder='B点X轴坐标' bindinput='inputXb'></wxc-input>
+        <wxc-input type="text" value='{{value}}' title="Y：" placeholder='B点Y轴坐标' bindinput='inputYb'></wxc-input>
+    </view>
+     <view class='input_wrapper'>
+        <text class='input_title'>请输入交会长度：</text>
+        <wxc-input type="text" value='{{value}}' title="AP：" placeholder='请输入AP长度' bindinput='inputAP'></wxc-input>
+        <wxc-input type="text" value='{{value}}' title="BP：" placeholder='请输入BP长度' bindinput='inputBP'></wxc-input>
+    </view>
+    <!-- 按钮组 -->
+    <view class='btn_wrapper'>
+      <button class='calc_btn' hover-class='calc_btn_hover' bindtap='disInter'>计算结果</button>
+      <button class='calc_btn' hover-class='calc_btn_hover' bindtap='clear'>清 空</button>
+    </view>
+     <!-- 结果 -->
+    <view class='result'>
+      <view class='res_dis'>
+        <view class='dis_title'>P点X轴坐标：</view>
+        <view class='dis_text'>{{xp}}</view>
+      </view>
+      <view class='res_angle'>
+        <view class='angle_title'>P点Y轴坐标：</view>
+        <view class='angle_text'>{{yp}}</view>
+      </view>
+    </view>
+  </view>
+</view>

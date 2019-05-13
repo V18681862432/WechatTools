@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/about/about",
+    "pages/tools/tools",
+    "pages/lib/location/location",
+    "pages/lib/degToDms/degToDms",
+    "pages/lib/dmsToDeg/dmsToDeg",
+    "pages/lib/disInter/disInter",
+    "pages/lib/disCalcFS/disCalcFS",
+    "pages/lib/triangleArea/triangleArea",
+    "pages/lib/calcMech/calcMech",
+    "pages/lib/calcMech/history/history"
+  ],
+  
+  "window": {
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#00869c",
+    "navigationBarTitleText": "掌 上 计 算",
+    "navigationBarTextStyle": "white"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "networkTimeout": {
+    "request": 10000
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#00869c",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/home_selected.png",
+        "iconPath": "images/home_normal.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/tools_selected.png",
+        "iconPath": "images/tools_normal.png",
+        "pagePath": "pages/tools/tools",
+        "text": "工具"
+      },
+      {
+        "selectedIconPath": "images/aboutme_selected.png",
+        "iconPath": "images/aboutme_normal.png",
+        "pagePath": "pages/about/about",
+        "text": "关于"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+  
+}

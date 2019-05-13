@@ -1,0 +1,26 @@
+<view class='lib_bg'>
+  <image src='../../../images/bg_04.jpg'></image>
+</view>
+<view class='page'>
+  <view class='page_hd'>
+    <text class='page_title'>度分秒转度数</text>
+  </view>
+  <view class='page_bd'>
+    <view class='show_img_wrapper'>
+      <image src='../../../images/dmsToDeg.png'></image>
+    </view>
+    <view class='input_wrapper'>
+      <wxc-input type="text" value='{{value}}' title="度：" placeholder="°" bindinput='inputD'></wxc-input>
+      <wxc-input type="text" value='{{value}}' title="分：" placeholder="’" bindinput='inputM'></wxc-input>
+      <wxc-input type="text" value='{{value}}' title="秒：" placeholder="”" bindinput='inputS'></wxc-input>
+    </view>
+    <view class='btn_wrapper'>
+      <button class='calc_btn' hover-class='calc_btn_hover' bindtap='dmsToDeg'>转换</button>
+      <button class='calc_btn' hover-class='calc_btn_hover' bindtap='clear'>清 空</button>
+    </view>
+    <view class='result'>
+      <view class='res_title'>转换角度为：</view>
+      <view class='res_text'>{{result}}</view>
+    </view>
+  </view>
+</view>

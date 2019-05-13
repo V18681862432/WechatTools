@@ -1,0 +1,10 @@
+<view class='tools'>
+  <view class='bg'>
+    <image src='../../images/bg_01.jpg'></image>
+  </view>
+  <view class='list-wrap'>
+    <view class='list-item' wx:for='{{items}}' wx:key=''>
+      <wxc-list title="{{item.title}}" bindtap='{{item.bindtap}}'></wxc-list>
+    </view>
+  </view>
+</view>
