@@ -19,7 +19,7 @@ Page({
         bindtap: 'degToDms'
       },
       {
-        title: '地图(获取当前位置)',
+        title: '获取位置',
         bindtap: 'location'
       },
       {
