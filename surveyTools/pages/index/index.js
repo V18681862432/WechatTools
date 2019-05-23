@@ -18,27 +18,27 @@ exports.default = Page({
     itemLists1: [
       {
         id: 1,
-        imgSrc: '../../images/item_06.png',
+        imgSrc: '../../images/xy.png',
         desc: '坐标反算'
       },
       {
         id: 2,
-        imgSrc: '../../images/item_07.png',
+        imgSrc: '../../images/jisuanqi.png',
         desc: '简单计算器'
       },
       {
         id: 3,
-        imgSrc: '../../images/item_08.png',
+        imgSrc: '../../images/location.png',
         desc: '获取位置'
       },
       {
         id: 4,
-        imgSrc: '../../images/item_09.png',
-        desc: '支导线坐标计算'
+        imgSrc: '../../images/jingwei.png',
+        desc: '获取经纬度'
       },
       {
         id: 5,
-        imgSrc: '../../images/item_10.png',
+        imgSrc: '../../images/gengduo1.png',
         desc: '更多'
       },
     ]
@@ -62,10 +62,8 @@ exports.default = Page({
         })
         break;
       case 4:
-        wx.showToast({
-          title: '做不出来，原谅我吧',
-          icon:'none',
-          duration:1500
+        wx.navigateTo({
+          url: '../lib/jingwei/jingwei',
         })
         break;
       case 5:

@@ -111,7 +111,7 @@
   height: 0;
   width: 0;
   display: block;
-  border-top: 30rpx solid #fff;
+  border-top: 30rpx solid #ccc;
   border-right: 15rpx solid transparent;
   border-left: 15rpx solid transparent;
   border-bottom: 30rpx solid transparent;
@@ -125,33 +125,35 @@
   position: fixed;
   top: 45%;
   left: 50%;
-  margin-top: -280rpx;
+  margin-top: -165rpx;
   margin-left: -300rpx;
   border-radius: 10rpx;
   padding: 20rpx;
   width: 560rpx;
-  height: 670rpx;
+  height: 300rpx;
   background-color: #fff;
 }
 .text_desc1 .desc_title{
-  margin-top: 20rpx;
+   margin-top: 20rpx;
   padding: 10rpx;
+  font-size: 50rpx;
   text-align: center;
 }
 .text_desc2{
   position: fixed;
+  top: 45%;
   left: 50%;
-  top: 50%;
-  margin-top: -300rpx;
+  margin-top: -165rpx;
   margin-left: -300rpx;
-  width: 600rpx;
-  height: 600rpx;
-  background-color: #ccc;
-  border-radius: 50%;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  width: 560rpx;
+  height: 300rpx;
+  background-color: #fff;
 }
 .text_desc2 .desc_list{
   color: #666;
-  font-size: 44rpx;
+  font-size: 50rpx;
   width: 400rpx;
   height: 300rpx;
   position: fixed;
@@ -179,13 +181,7 @@
 .text_desc3 .desc_title{
   margin-top: 20rpx;
   padding: 10rpx;
-  text-align: center;
-}
-.text_desc3 .zhihu{
-  margin-top: 30rpx;
-  text-align: center;
-}
-.text_desc3 .weibo{
+  font-size: 50rpx;
   text-align: center;
 }
 .label_img{
@@ -216,16 +212,19 @@
   height: 50rpx;
 }
 .label_title1{
+  font-size:26rpx;
   top:150rpx;
   left: 80rpx;
   animation: upDown1 2s infinite;
 }
 .label_title2{
+  font-size:26rpx;
   top: 20rpx;
   left: 300rpx;
   animation: upDown2 3s infinite;
 }
 .label_title3{
+  font-size:26rpx;
   top: 120rpx;
   left:500rpx;
   animation: upDown3 2s infinite;

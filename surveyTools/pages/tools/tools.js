@@ -26,6 +26,9 @@ Page({
         title: '计算器',
         bindtap: 'calcMech'
       },
+      {
+        title:'获取经纬度',bindtap:'jingwei'
+      }
     ]
   },
   triangleArea:function(e){
@@ -81,6 +84,11 @@ Page({
   calcMech:function(e){
     wx.navigateTo({
       url: '../lib/calcMech/calcMech'
+    })
+  },
+  jingwei:function(e){
+    wx.navigateTo({
+      url: '../lib/jingwei/jingwei',
     })
   }
 })

@@ -57,8 +57,8 @@ swiper-item image{
 }
 .item image{
   display: inline-block;
-  width: 250rpx;
-  height: 250rpx;
+  width: 165rpx;
+  height: 165rpx;
 }
 .item .desc{
   font-size: 32rpx;

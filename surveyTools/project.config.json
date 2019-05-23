@@ -4,15 +4,17 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"autoAudits": false,
+		"checkInvalidKey": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.3.0",
-	"appid": "wx949e43813899c7a8",
+	"appid": "wx572e02996aa55712",
 	"projectname": "survey_tool",
 	"debugOptions": {
 		"hidedInDevtools": []

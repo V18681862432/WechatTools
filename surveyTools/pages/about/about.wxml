@@ -19,8 +19,8 @@
         <view class='text_desc3' wx:if='{{activeIndex == 1}}'>
           <view class='desc_title'>觉得好的话就推荐给更多人吧</view>
         </view>
-        <view class='text_desc1' wx:if='{{activeIndex == 2}}'><view  class="desc_title">西安科技大学物联网工程</view>
-          <view class='label_img'>
+        <view class='text_desc1' wx:if='{{activeIndex == 2}}'><view  class="desc_title">西安科技大学通信与信息工程学院</view>
+          <view class=''>
             <image src=''></image>
           </view>
         </view>

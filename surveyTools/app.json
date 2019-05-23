@@ -10,14 +10,15 @@
     "pages/lib/disCalcFS/disCalcFS",
     "pages/lib/triangleArea/triangleArea",
     "pages/lib/calcMech/calcMech",
-    "pages/lib/calcMech/history/history"
+    "pages/lib/calcMech/history/history",
+    "pages/lib/jingwei/jingwei"
   ],
   
   "window": {
     "backgroundTextStyle": "dark",
     "backgroundColor": "#fff",
     "navigationBarBackgroundColor": "#00869c",
-    "navigationBarTitleText": "掌 上 计 算",
+    "navigationBarTitleText": "多功能掌上计算",
     "navigationBarTextStyle": "white"
   },
   "permission": {

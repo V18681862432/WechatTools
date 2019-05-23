@@ -1,0 +1,5 @@
+<view class='page_hd home_page'>
+    <text class='page_title'>您当前位置的经纬度</text>
+<view class='f'>纬度：{{latitude}}</view>
+<view class='f'>经度：{{longitude}}</view>
+  </view>
